@@ -63,6 +63,9 @@
         
 }
 
+.nav-li__link--current .nav-li__content{
+    color: #0A75BC;
+}
 
 .nav-li__link:hover .nav-li__content {
     color: #0A75BC;
