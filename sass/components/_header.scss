@@ -1,0 +1,61 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	min-height: 300px;
+	border-bottom: 2px solid #231F20;
+
+
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	flex-grow: 1;
+	background-color: #231F20;
+
+	@media screen and (max-width: 599px) {
+		// max-width: 480px;
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/header-480.jpeg');
+	}
+
+	@media screen and (min-width: 600px) {
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/header-768.jpeg');
+	}
+
+	@media screen and (min-width: 900px) {
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/header-1200.jpeg');
+	}
+	@media screen and (min-width: 1200px) {
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/header-1600.jpeg');
+	}
+}
+
+.header__logo-image {
+	@media screen and (min-width: 600px) {
+			width: 120px;
+		}
+	
+		@media screen and (min-width: 900px) {
+			width: 130px;
+		}
+}
+
+.container--flex {
+	position:relative;
+    display: flex;
+	align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

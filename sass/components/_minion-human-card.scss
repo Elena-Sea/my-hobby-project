@@ -1,0 +1,31 @@
+.slide-card__thumb {
+    @extend %flex-column;
+
+}
+
+.slide-card__image {
+    border-radius: 25px;
+    box-shadow: inset 0 -3em 3em rgba(10, 117, 188, 0.2), 0 0 0 4px rgb(252, 224, 41), 0.3em 0.3em 1em rgba(10, 117, 188, 0.5);
+
+    margin-bottom: 10px;
+
+    transform: scale(1);
+    transition: transform 250ms linear;
+
+    @media screen and (min-width: 768px) {
+        width: 120px;
+    }
+    @media screen and (min-width: 1024px) {
+        width: 150px;
+    }
+}
+
+.slide-card__image:hover,
+.slide-card__image:focus {
+    transform: scale(1.1);
+}
+
+.slide-card__name {
+    color: #0A75BC;
+    margin-bottom: 5px;
+}

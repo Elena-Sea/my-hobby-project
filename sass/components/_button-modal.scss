@@ -1,0 +1,90 @@
+.reg {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    padding: 0 25px;
+    
+    color: #FCE029;
+
+    @media screen and (max-width: 767px) {
+        margin-top: 80px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        padding: 0;
+    }
+}
+
+.reg-appeal {
+    margin-right: 10px;
+    font-size: 30px;
+    @media screen and (max-width: 1200px){
+        display: none;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 20px;
+        width: 60px;
+        padding: 33px 0;
+    }
+}
+
+
+
+.menu-button {
+    width: 35px;
+    height: 35px;
+    
+    top: 30px;
+    right: 40px;
+    position: absolute;
+    z-index: 11;
+
+    &:hover,
+    &:focus {
+        fill: #0A75BC;
+    }
+
+}
+
+.menu-button,
+.reg-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background-color: transparent;
+    padding: 0;
+
+    fill: #FCE029;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    cursor: pointer;
+}
+
+.reg-button {
+
+    padding: 20px;
+    @media screen and (min-width: 1024px) {
+            padding: 30px 0;
+        }
+}
+
+.menu-button__icon-close {
+    display: none;
+}
+
+.menu-button.is-open .menu-button__icon-close {
+    display: block;
+}
+
+.menu-button.is-open .menu-button__icon-open {
+    display: none;
+}
+
+@media screen and (min-width: 751px) {
+    .menu-button {
+        display: none;
+    }
+}

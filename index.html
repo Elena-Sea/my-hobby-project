@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Minions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+  
+    <header class="header">
+        <a class="header__logo" href="index.html">
+            <img class="header__logo-image" src="./images/imgbin_minions-goggle.png" alt="logo"  width="100">
+        </a>
+  
+        <button type="button" class="menu-button" aria-expanded="false" data-menu-button>
+            <svg width="32" height="32">
+            <use class="menu-button__icon-open" href="./images/sprite-minions.svg#icon-menu"></use>
+    
+            <use class="menu-button__icon-close" href="./images/sprite-minions.svg#icon-cross"></use>
+            </svg>
+        </button>
+  
+        <nav class="header__nav" data-menu>    
+    
+                <ul class="nav__list">
+                    <li class="nav-li">
+                    <a class="nav-li__link" href="./index.html">
+                        <span class="nav-li__content">Home</span>
+                        <svg width="45" height="45">
+                            <use class="nav-li__icon" href="./images/sprite-minions.svg#icon-home"></use>
+                        </svg>
+                    </a>
+                    </li>
+                    <li class="nav-li">
+                    <a class="nav-li__link" href="./minions-world.html">
+                        <span class="nav-li__content nav-li__content--world">
+                            <svg class="nav-li__world-icon" width="23" height="23">
+                                <use class="nav-li__world-icon" href="./images/sprite-minions.svg#icon-baffled"></use>
+                            </svg>
+                            world</span>
+                        <svg width="45" height="45">
+                            <use class="nav-li__icon" href="./images/sprite-minions.svg#icon-earth"></use>
+                        </svg>
+                    </a>
+                    </li>
+                    <li class="nav-li">
+                    <a class="nav-li__link" href="https://slides.powercoders.org/work/">
+                        <span class="nav-li__content">Movies</span>
+                        <svg width="45" height="45">
+                            <use class="nav-li__icon" href="./images/sprite-minions.svg#icon-film"></use>
+                        </svg>
+                    </a>
+                    </li>
+                    <li class="nav-li">
+                    <a class="nav-li__link" href="https://slides.powercoders.org/blog/">
+                        <span class="nav-li__content">Books</span>
+                        <svg width="45" height="45">
+                            <use class="nav-li__icon" href="./images/sprite-minions.svg#icon-book"></use>
+                        </svg>
+                    </a>
+                    </li>
+                    <li class="nav-li">
+                    <a class="nav-li__link" href="https://slides.powercoders.org/contact/">
+                        <span class="nav-li__content">Cave</span>
+                        <svg width="45" height="45">
+                            <use class="nav-li__icon" href="./images/sprite-minions.svg#icon-basecamp"></use>
+                        </svg>
+                        </a>
+                    </li>
+        
+                </ul>
+       
+        </nav>
+        <div class="reg">
+            <p class="reg-appeal">Log in</p>
+            <button type="button" class="reg-button" aria-expanded="false" data-reg-button>
+                <svg width="32" height="32">
+                    <use class="reg-button__icon-enter" href="./images/sprite-minions.svg#icon-enter"></use>
+            
+                    <use class="menu-button__icon-close" href="./images/sprite-minions.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="section section--front">
+            
+            <div class="container container--front">
+                <h1 class="container__title container__title--front">Wellcome to minions world!</h1>
+                <img class="container__image-minions" src="./images/imgbin_minions-png.png" alt="minions" width="150">
+
+                <div class="about-minions">
+                    <p class="what-minions">What do you know about yellow creatures?</p>
+                    <p class="what-minions">Who are they? ...</p>
+                    <p class="what-minions">What are they made from? ...</p>
+                    <p class="what-minions">Who are their friend and enemies? ...</p>
+                </div>
+                
+                <a class="button-link button-link--end" href="./heros.html" target="_blank">To discover minions
+                <svg width="22" height="22">
+                    <use class="button-link__icon" href="./images/sprite-minions.svg#icon-circle-right"></use>
+                </svg>
+                </a>
+            </div>
+            <div class="box box-oblique"></div>
+            <div class="box box-oblique--over">
+                <h2 class="container__title container__title--hidden">Hidden</h2>
+                <div class="container container-slideshow">
+                    <ul class="slides">
+                        <li class="slide-card">
+                            <div class="slide-card__thumb">
+                                <img class="slide-card__image" src="./images/Kevin.webp" width="100" alt="minion world member photo" />
+                                <p class="slide-card__name">Kevin</p>
+                            </div>
+                        </li>
+                        <li class="slide-card">
+                            <div class="slide-card__thumb">
+                                <img class="slide-card__image" src="./images/Kevin.webp" width="100" alt="minion world member photo" />
+                                <p class="slide-card__name">Kevin</p>
+                            </div>
+                        </li>
+                        <li class="slide-card">
+                            <div class="slide-card__thumb">
+                                <img class="slide-card__image" src="./images/Kevin.webp" width="100" alt="minion world member photo" />
+                                <p class="slide-card__name">Kevin</p>
+                            </div>
+                        </li>
+                    </ul>
+                
+                
+                </div>
+            </div>
+        </section>
+        <section class="section section--media">
+            <h2 class="container__title container__title--media">Minions in media</h2>
+            <div class="container container-midia">
+                <ul class="media">
+                    <li class="media-card">
+                        <div class="media-card__thumb">
+                            <img class="media-card__image" src="./images/Dme.jpeg" width="100" alt="minion world member photo" />
+                            <p class="media-card__name">Movies with Minions staring</p>
+                            <a class="button-link " href="./heros.html" target="_blank">To movies
+                                <svg width="22" height="22">
+                                    <use class="button-link__icon" href="./images/sprite-minions.svg#icon-circle-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="media-card">
+                        <div class="media-card__thumb">
+                            <img class="media-card__image" src="./images/book.webp" width="100" alt="minion world member photo" />
+                            <p class="media-card__name">Books about minion world</p>
+                            <a class="button-link " href="./heros.html" target="_blank">To movies
+                                <svg width="22" height="22">
+                                    <use class="button-link__icon" href="./images/sprite-minions.svg#icon-circle-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                
+                
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="section section--footer">
+            <div class="footer__container">
+                    <p class="info"><span class="footer__symbol">&#169</span> 2022 All Rights Reserved :) </p>
+                    <p>Developed with <svg class="footer__icon" width="20" height="20">
+                        <use href="./images/sprite-minions.svg#icon-star-full"></use>
+                    </svg> during <a class="know-more" href="https://powercoders.org/" target="_blank" rel="noreferrer noopener">Powercoders bootcamp 2022</a></p>
+        
+               
+            </div>
+        </section>
+    </footer>
+    <!-- <script src="./js/index.js"></script> -->
+    <script src="./js/mobile-reg.js"></script>
+  </body>
+
+</html>

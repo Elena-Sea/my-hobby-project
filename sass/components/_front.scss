@@ -1,0 +1,107 @@
+.section--front {
+	position: relative;
+	background-color: #FCE029;
+}
+
+.container--front {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-left: 100px;
+
+	@media screen and (min-width: 768px) {
+		font-size: 20px;
+	}
+
+}
+		
+.container__title--front {
+	@extend %title;
+	// width: 250px;
+	// @media screen and (min-width: 768px) {
+	// 		width: 100%;
+	// 	}
+}
+
+.container__image-minions {
+	position: absolute;
+	z-index: 9;
+	left: 1em;
+	top: 0;
+
+	@media screen and (min-width: 1024px) {
+		width: 180px;
+	}
+	
+}
+
+.about-minions {
+	font-style: italic;
+	margin-bottom: 50px;
+}
+
+.box-oblique {
+	width: 100%;
+	height: 22em;
+	padding: 0;
+	top: 28em;
+	left: 0;
+
+	z-index: 2;
+	position: absolute;
+
+	transform: skewY(5deg) rotate(0.01deg);
+	background: white;
+
+	@media screen and (min-width: 1024px) {
+		height: 28em;
+	}
+}
+
+.container__title--hidden {
+	@extend %visually-hidden;
+}
+
+.container-slideshow {
+	width: 100%;
+	padding: 0;
+
+}
+
+.slides {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.box-oblique::before {
+	width: 100%;
+	height: 2px;
+	content: "";
+	display: block;
+	background: linear-gradient(90deg, #0A75BC 15%, #ffffff 75%);
+	@media screen and (min-width: 1024px) {
+		height: 3px;
+	}
+}
+
+.box-oblique--over {
+	width: 100%;
+	height: 20em;
+	top: 5em;
+	left: 0;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 70px 70px 30px;
+
+	@media screen and (min-width: 768px) {
+		padding: 200px 200px 50px;
+	}
+
+	z-index: 3;
+	position: relative;
+	background: transparent;
+}

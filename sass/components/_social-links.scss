@@ -1,0 +1,32 @@
+
+.social-links {
+	@extend %flex;
+}
+
+.social-link {
+	display: flex;
+    &:not(:last-child) {
+	margin-right: 10px;
+    }
+}
+
+.social-link__link {
+	@extend %flex;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+
+	color: $link-icon-fill;
+
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+	background-color: $conditions-color;
+	color: $link-icon-revfill;
+    }
+}
+
+.social-link__icon {
+	fill: currentColor;
+}
