@@ -5,7 +5,7 @@
 const minionHeroes = [
   {
     name: 'Lucy Wilde',
-    image: './images/Abdula-opt.jpeg',
+    image: '../images/lucy-wild.webp',
 	role: 'Positive hero',
 	occupation: 'Agent at the Anti-Villain League',
 	webpage: 'https://despicableme.fandom.com/wiki/Lucy_Wilde',
@@ -15,7 +15,7 @@ const minionHeroes = [
   },
   {
     name: 'Felonius Gru',
-    image: './images/ali-opt.jpeg',
+    image: '../images/Gru.webp',
 	role: 'Positive hero',
 	occupation: 'Supervillain in past and Anti-Villain League agent currently',
 	webpage: 'https://despicableme.fandom.com/wiki/Felonius_Gru',
@@ -199,7 +199,7 @@ const minionHeroes = [
 // main code 
 
 const ref = {
-	teamGallery: document.querySelector(".team-gallery"),
+	minionsGallery: document.querySelector(".minions-gallery"),
 	selectorMinions: document.querySelector("#minions"),
 	selectorCountry: document.querySelector("#country"),
 	selectorGender: document.querySelector("#gender"),
@@ -209,35 +209,21 @@ const ref = {
 	selectorGenderWoman: document.querySelector('.range__icon--woman'),
 }
 
-function markupTeamGallery(minions) { 
-	ref.teamGallery.innerHTML = "";
-    ref.teamGallery.insertAdjacentHTML('beforeend', minions.map(minion => { 
+function markupGallery(minionHeroes) { 
+	ref.minionsGallery.innerHTML = "";
+    ref.minionsGallery.insertAdjacentHTML('beforeend', minionHeroes.map(minionHero => { 
         return `<li class="minion-card">
                     <div class="minion-card__thumb">
-                        <img class="minion-card__image" src="${minion.image}" width="200" alt="${minion.name} photo"/>
+                        <img class="minion-card__image" src="${minionHero.image}" width="200" alt="${minionHero.name} photo"/>
                         <div class="minion">
-                            <h3 class="minion__name">${minion.name.toUpperCase()}</h3>
-                            <p class="minion__role">${minion.role}</p>
-							<p class="minion__function">${minion.function}</p>
+                            <h3 class="minion__name">${minionHero.name.toUpperCase()}</h3>
+                            <p class="minion__role">${minionHero.role}</p>
+							<p class="minion__function">${minionHero.occupation}</p>
                             <ul class="minion__links">
                                 <li class="minion-link">
-                                    <a href="${minion.mail}" class="minion-link__link">
+                                    <a href="${minionHero.webpage}" class="minion-link__link">
                                     <svg class="minion-link__icon" width="32" height="32">
-                                        <use href="./images/sprite-minions.svg#icon-github"></use>
-                                    </svg>
-                                    </a>
-                                </li>
-								<li class="minion-link">
-                                    <a href="${minion.linkedin}" class="minion-link__link">
-                                    <svg class="minion-link__icon" width="32" height="32">
-                                        <use href="./images/sprite-minions.svg#icon-linkedin"></use>
-                                    </svg>
-                                    </a>
-                                </li>
-                                <li class="minion-link">
-                                    <a href="${minion.mail}" class="minion-link__link">
-                                    <svg class="minion-link__icon" width="32" height="32">
-                                        <use href="./images/sprite-minions.svg#icon-envelop"></use>
+                                        <use href="./images/sprite-minions.svg#icon-arrow-right2"></use>
                                     </svg>
                                     </a>
                                 </li>
@@ -250,7 +236,7 @@ function markupTeamGallery(minions) {
     );
 }
 
-markupTeamGallery(minions);
+markupGallery(minionHeroes);
 
 
 function showMinions() { 
